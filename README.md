@@ -26,15 +26,21 @@ The system allows users to add items to the inventory, update item quantities, a
    
     - For Linux open your terminal and paste the following commands:
    
-      `$ sudo apt-get update`
+            $ sudo apt-get update
    
-      `$ sudo apt-get install python3.6`
+            $ sudo apt-get install python3.6
 
 3. Install pysqlite3:
    - For both Windows and Linux run the following command:
-     `pip install pysqlite3`
+     
+            pip install pysqlite3
 
 4. To run the python file paste the command to either powershell or cmd:
-   `python3 inventory_management.py
+
+            python3 inventory_management.py
+   
+5. To access the inventory database. Paste the following command to your terminal.
+
+            sqlite3 inventory.db
 
 
