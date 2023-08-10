@@ -12,7 +12,7 @@ The system allows users to add items to the inventory, update item quantities, a
 - View the current inventory, displaying item IDs, names, and quantities.
 
 ## Limitations
-- The system can't update already existing items
+- While adding already existing items, the system cannot update them.
 
 ## Requirements:
 - Python 3.10
