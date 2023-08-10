@@ -19,10 +19,9 @@ The system allows users to add items to the inventory, update item quantities, a
 - Pysqlite3
 
 ## Usage:
-1. Clone the repository:
-   -`git clone https://github.com/Erick559/inventory-management.git`
+1. Clone the repository: `git clone https://github.com/Erick559/inventory-management.git`
    
-2.Install Python 3.10
+2. Install Python 3.10
  - For Windows visit (python.org) and click the download button
    
  - For Linux open your terminal and paste the following commands:
