@@ -27,11 +27,14 @@ class InventorySystem:
 
     def add_item(self, item_id, name, quantity):
             with self.connection:
-                self.connection.execute('''
-                    INSERT INTO inventory (item_id, name, quantity)
-                    VALUES (?, ?, ?)
-                    ''', (item_id, name, quantity))
-                print(f"Item added: Item ID: {item_id}, Name: {name}, Quantity: {quantity}")
+                try:
+                    self.connection.execute('''
+                        INSERT INTO inventory (item_id, name, quantity)
+                        VALUES (?, ?, ?)
+                        ''', (item_id, name, quantity))
+                    print(f"Item added: Item ID: {item_id}, Name: {name}, Quantity: {quantity}")
+                except sqlite3.IntegrityError:
+                    self.update_item_quantity(item_id, quantity)
 
     def update_item_quantity(self, item_id, quantity):
         with self.lock:
